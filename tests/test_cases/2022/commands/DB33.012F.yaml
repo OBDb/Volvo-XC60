@@ -1,0 +1,20 @@
+command_id: DB33.012F
+test_cases:
+- expected_values:
+    FLI: 51.76471
+  response: 18DAF11003412F84
+- expected_values:
+    FLI: 52.94118
+  response: 18DAF11003412F87
+- expected_values:
+    FLI: 53.72549
+  response: 18DAF11003412F89
+- expected_values:
+    FLI: 54.90196
+  response: 18DAF11003412F8C
+- expected_values:
+    FLI: 55.68627
+  response: 18DAF11003412F8E
+- expected_values:
+    FLI: 57.64706
+  response: 18DAF11003412F93
