@@ -41,3 +41,8 @@ supported_commands_by_ecu:
   - 0131:CLR_DIST
   - 0142:VPWR
   - 0146:AAT
+unsupported_commands_by_ecu:
+  "D016":
+  - D016.22EE6F|ta=30,fc=1,c=1D:VOLVO_APP_POS
+  "D01A":
+  - D01A.224028|ta=01,fc=1,c=1D:VOLVO_SOC
