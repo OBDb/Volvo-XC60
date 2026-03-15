@@ -7,6 +7,9 @@ test_cases:
     VSS: 1
   response: 18DAF11003410D01
 - expected_values:
+    VSS: 2
+  response: 18DAF11003410D02
+- expected_values:
     VSS: 7
   response: 18DAF11003410D07
 - expected_values:
