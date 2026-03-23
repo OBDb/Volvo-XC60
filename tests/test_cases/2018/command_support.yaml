@@ -28,6 +28,7 @@ supported_commands_by_ecu:
   - 7DF.0151
   - 7DF.0156
   - 7DF.0159
+  - 7DF.015B
   - 7DF.0162
   - 7DF.0163
   - 7DF.018E
@@ -103,6 +104,7 @@ unsupported_commands_by_ecu:
   - 7E0.0151:FUEL_TYP
   - 7E0.0156:LGSO2FT1
   - 7E0.0159:FRP_ABS
+  - 7E0.015B:BAT_SOC
   - 7E0.0162:TQ_ACT
   - 7E0.0163:TQ_REF
   - 7E0.018E:TQ_FR
