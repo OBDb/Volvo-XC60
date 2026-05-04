@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     FRP_ABS: 12020
   response: 18DAF11004415904B2
+- expected_values:
+    FRP_ABS: 13830
+  response: 18DAF1100441590567
