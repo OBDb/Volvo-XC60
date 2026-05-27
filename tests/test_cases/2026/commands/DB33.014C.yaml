@@ -1,0 +1,8 @@
+command_id: DB33.014C
+test_cases:
+- expected_values:
+    TAC_PCT: 27.05882
+  response: 18DAF11003414C45
+- expected_values:
+    TAC_PCT: 41.17647
+  response: 18DAF11003414C69
