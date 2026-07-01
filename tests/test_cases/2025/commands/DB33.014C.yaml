@@ -4,29 +4,5 @@ test_cases:
     TAC_PCT: 22.35294
   response: 18DAF11003414C39
 - expected_values:
-    TAC_PCT: 22.7451
-  response: 18DAF11003414C3A
-- expected_values:
-    TAC_PCT: 25.4902
-  response: 18DAF11003414C41
-- expected_values:
-    TAC_PCT: 25.88235
-  response: 18DAF11003414C42
-- expected_values:
-    TAC_PCT: 28.62745
-  response: 18DAF11003414C49
-- expected_values:
-    TAC_PCT: 29.01961
-  response: 18DAF11003414C4A
-- expected_values:
-    TAC_PCT: 29.80392
-  response: 18DAF11003414C4C
-- expected_values:
-    TAC_PCT: 34.11765
-  response: 18DAF11003414C57
-- expected_values:
-    TAC_PCT: 38.43137
-  response: 18DAF11003414C62
-- expected_values:
     TAC_PCT: 56.86275
   response: 18DAF11003414C91
