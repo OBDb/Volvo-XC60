@@ -4,5 +4,5 @@ test_cases:
     BAT_SOC: 49.41176
   response: 18DAF11003415B7E
 - expected_values:
-    BAT_SOC: 64.70588
-  response: 18DAF11003415BA5
+    BAT_SOC: 72.15686
+  response: 18DAF11003415BB8
