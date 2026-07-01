@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     EVAP_VP_WIDE: 0.296
   response: 18DAF1100441540128
+- expected_values:
+    EVAP_VP_WIDE: 0.431
+  response: 18DAF11004415401AF
