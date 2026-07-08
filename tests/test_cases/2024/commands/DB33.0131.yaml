@@ -1,0 +1,11 @@
+command_id: DB33.0131
+test_cases:
+- expected_values:
+    CLR_DIST: 738
+  response: 18DAF11004413102E2
+- expected_values:
+    CLR_DIST: 767
+  response: 18DAF11004413102FF
+- expected_values:
+    CLR_DIST: 770
+  response: 18DAF1100441310302
