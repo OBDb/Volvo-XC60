@@ -105,6 +105,6 @@ unsupported_commands_by_ecu:
   - 7E0.015E:FUEL_RATE
   - 7E0.01A6:ODO
   "D016":
-  - D016.22EE6F|ta=30,fc=1,c=1D:VOLVO_APP_POS
+  - D016.22EE6F
   "D01A":
   - D01A.224028

@@ -44,6 +44,6 @@ supported_commands_by_ecu:
   - 0162:TQ_ACT
 unsupported_commands_by_ecu:
   "D016":
-  - D016.22EE6F|ta=30,fc=1,c=1D:VOLVO_APP_POS
+  - D016.22EE6F
   "D01A":
   - D01A.224028
