@@ -76,4 +76,4 @@ supported_commands_by_ecu:
   - DB33.01A6:ODO
 unsupported_commands_by_ecu:
   "D016":
-  - D016.22EE6F|ta=30,fc=1,c=1D:VOLVO_APP_POS
+  - D016.22EE6F

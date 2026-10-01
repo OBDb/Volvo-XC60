@@ -1,4 +1,1497 @@
 { "commands": [
-
+{ "hdr": "720", "dbg": true, "cmd": {"22": "61CC"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_LAST_SERVICE_720", "path": "Trips",  "fmt": {           "len": 24, "max": 16777215,           "unit": "kilometers" }, "name": "Odometer at last service"},
+    {"id": "XC60_TOT_MONTHS_LAST",      "path": "Engine", "fmt": {"bix": 24, "len": 16, "max": 393210,   "mul": 6, "unit": "unknown"    }, "name": "Total months at last service"},
+    {"id": "XC60_TOT_ENG_RUNNING_TIME", "path": "Engine", "fmt": {"bix": 40, "len": 16, "max": 65535,              "unit": "unknown"    }, "name": "Total engine running time at last service"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "61D0"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DIM_FLI_2_2_EJECTOR", "path": "Fuel", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "liters" }, "name": "Fuel level 2 of 2 ejector side saddle tank"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "61D1"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DIM_FLI_1_2", "path": "Fuel", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "liters" }, "name": "Fuel level 1 of 2"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "630E"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DIST_SINCE_SERVICE_720", "path": "Trips",  "fmt": {           "len": 16, "max": 65535,             "unit": "kilometers" }, "name": "Distance since last service"},
+    {"id": "XC60_MONTHS_SINCE_SERVICE",   "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 546,   "div": 120, "unit": "scalar"     }, "name": "Months since last service"},
+    {"id": "XC60_ENG_TIME_SINCE",         "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 65535,             "unit": "unknown"    }, "name": "Engine time since last service"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "D936"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TRIP_1", "path": "Engine", "fmt": {"bix": 24, "len": 16, "max": 6553, "div": 10, "unit": "kilometers" }, "name": "Trip 1"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "D937"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TRIP_2", "path": "Engine", "fmt": {"bix": 24, "len": 16, "max": 6553, "div": 10, "unit": "kilometers" }, "name": "Trip 2"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "DA10"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ACC_SETSPEED", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Adaptive cruise set speed"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "DA11"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ACC_TIMEGAP", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 128, "div": 2, "add": 0.5, "unit": "seconds" }, "name": "Adaptive cruise time gap"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "DA12"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ACC_TARGETVEHICLE", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Adaptive cruise target vehicle"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "DA18"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TSI_SPD", "path": "Movement", "fmt": {"bix": 8, "len": 16, "max": 327675, "mul": 5, "unit": "kilometersPerHour" }, "name": "Traffic sign speed limit"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_DIM", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "DD04"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_CAR_T_720", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "In-car temperature"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "EE11"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DIM_FLI_DAMPED", "path": "Fuel", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "liters" }, "name": "Fuel level damped"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "EE12"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FLI_DAMPED", "path": "Fuel", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "liters" }, "name": "Fuel level damped"}
+  ]},
+{ "hdr": "720", "dbg": true, "cmd": {"22": "EEFD"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DIST_EMPTY_MS_CAN", "path": "Trips", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance to empty", "suggestedMetric": "fuelRange"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "3B71"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FRONT_AXLE_SENS", "path": "Engine", "fmt": { "len": 8, "max": 6.37, "div": 40, "unit": "volts" }, "name": "Front axle sensor"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "3B73"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_REAR_AXLE_SENS", "path": "Engine", "fmt": { "len": 8, "max": 6.37, "div": 40, "unit": "volts" }, "name": "Rear axle sensor"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "4025"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_QUIESCENT_CURRENT", "path": "Engine", "fmt": { "len": 16, "max": 31767, "min": -1000, "div": 2, "add": -1000, "unit": "milliamps" }, "name": "Quiescent current average"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "4027"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BAT_OPERATION_TIME", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Battery operation time since battery monitoring sensor reset, days"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "4028"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BAT_ST_CHG_726", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Battery state of charge"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "4029"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BAT_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery temperature"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "402A"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BAT_V_726", "path": "Battery", "fmt": { "len": 8, "max": 18.75, "div": 20, "add": 6, "unit": "volts" }, "name": "Battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "4090"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BAT_CHG_AMPS", "path": "Battery", "fmt": { "len": 16, "max": 3584, "min": -511, "div": 16, "add": -511.7, "unit": "amps" }, "name": "Battery charge, amps"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "40D1"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ALTERNATOR_CTRL_MODE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Alternator control mode"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "4117"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FLI_SENS", "path": "Fuel", "fmt": { "len": 16, "max": 320, "mul": 100, "div": 20459, "unit": "volts" }, "name": "Fuel level sensor"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "4118"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FLI_SENS_EJECTOR", "path": "Fuel", "fmt": { "len": 16, "max": 320, "mul": 100, "div": 20459, "unit": "volts" }, "name": "Fuel level sensor ejector side saddle tank"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "411D"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ALTERNATOR_CHG_V_REQ", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Alternator charge voltage request"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "412A"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TWILIGHT_SENS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "volts" }, "name": "Twilight sensor"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "412D"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_REMOTE_KEY", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Remote key"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "417E"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SECONDARY_BAT_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Secondary battery voltage"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "419C"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SECONDARY_BAT_RELAY", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Secondary battery relay"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "41A5"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BAT_CHG_BALANCE_AH", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Battery charge balance, ah"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "41A7"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BAT_MANAGEMENT_SENS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Battery management sensor reliable"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "7151"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DIPPED_BEAM",    "path": "Engine", "fmt": {           "len": 8, "max": 255, "unit": "scalar" }, "name": "Dipped beam"},
+    {"id": "XC60_HIGH_BEAM",      "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "scalar" }, "name": "High beam"},
+    {"id": "XC60_PARKING_LIGHTS", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "scalar" }, "name": "Parking lights"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "C150"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BOOT_LID_SENS", "path": "Engine", "fmt": { "len": 8, "max": 3.98, "div": 64, "unit": "scalar" }, "name": "Boot lid sensor"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "C154"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BONNET_CLOSED", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Bonnet closed"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "C259"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_CENTRAL_LOCK", "path": "Engine", "fmt": { "len": 8, "max": 127, "div": 2, "unit": "scalar" }, "name": "Central lock"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_CEM", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "DD04"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_CAR_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "In car temperature"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "DD06"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_POWER_MODE", "path": "Engine", "fmt": { "len": 8, "max": 63, "min": -192, "add": -192, "unit": "scalar" }, "name": "Power mode"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "EEA2"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_V_POWER_SENSITIVE", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Voltage/power sensitive loads connected"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "EED2"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SECONDARY_BAT_T_25_C", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Secondary battery temperature"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "EED3"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SECONDARY_BAT_CHG", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Secondary battery charge time"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "EED4"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SECONDARY_BAT_V_LATEST", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Secondary battery voltage latest stored"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "EED5"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SECONDARY_BAT_NEEDED", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Secondary battery needed charge time"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "EED6"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DOWNTIME", "path": "Engine", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "unknown" }, "name": "Downtime"}
+  ]},
+{ "hdr": "726", "dbg": true, "cmd": {"22": "EED7"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SECONDARY_BAT_V_AVG", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Secondary battery voltage average value"}
+  ]},
+{ "hdr": "730", "dbg": true, "cmd": {"22": "3301"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_STEER_WHL_ANG", "path": "Tires", "fmt": { "len": 8, "max": 1020, "mul": 4, "unit": "unknown" }, "name": "Steering wheel angle velocity"}
+  ]},
+{ "hdr": "730", "dbg": true, "cmd": {"22": "330C"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_STEER_SHFT_TQ", "path": "Engine", "fmt": { "len": 8, "max": 12.8, "min": -12.7, "div": 10, "add": -12.7, "unit": "newtonMeters" }, "name": "Steering shaft torque"}
+  ]},
+{ "hdr": "730", "dbg": true, "cmd": {"22": "4139"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SERVO_PMP_ENG_POWER", "path": "Engine", "fmt": { "len": 8, "max": 127, "div": 2, "unit": "amps" }, "name": "Servo pump engine power consumption"}
+  ]},
+{ "hdr": "730", "dbg": true, "cmd": {"22": "413A"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SERVO_PMP_SPD_DES", "path": "Movement", "fmt": { "len": 8, "max": 5100, "mul": 20, "unit": "rpm" }, "name": "Servo pump speed, desired value"}
+  ]},
+{ "hdr": "730", "dbg": true, "cmd": {"22": "413C"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SERVO_PMP_SPD", "path": "Movement", "fmt": { "len": 8, "max": 5100, "mul": 20, "unit": "rpm" }, "name": "Servo pump speed"}
+  ]},
+{ "hdr": "730", "dbg": true, "cmd": {"22": "413D"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SERVO_SUP_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Servo supply voltage"}
+  ]},
+{ "hdr": "730", "dbg": true, "cmd": {"22": "D11C"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SERVO_CTRL_MODULE_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Servo control module temperature"}
+  ]},
+{ "hdr": "730", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_PSCM", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "9A1B"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_CAR_T_MS_CAN", "path": "Engine", "fmt": { "len": 16, "max": 923, "min": -100, "div": 64, "add": -100, "unit": "celsius" }, "name": "In-car temperature"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "9A21"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_LEFT_SEAT_HEATER_MS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "celsius" }, "name": "Left seat heater"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "9A22"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RIGHT_SEAT_HEATER_MS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "celsius" }, "name": "Right seat heater"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "9A23"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RL_SEAT_HEATER_MS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "celsius" }, "name": "Rear left seat heater"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "9A24"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RR_SEAT_HEATER_MS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "celsius" }, "name": "Rear right seat heater"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D111"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_CTRL_MODULE_POWER", "path": "Engine", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Control module power supply"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D900"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DEFROSTER_DAMPER", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Defroster damper motor wanted position"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D901"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RECIRCULATION_DAMPER", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Recirculation damper motor wanted position"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D902"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_LEFT_T_DAMPER_MOTOR", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Left temperature damper motor wanted position"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D903"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RIGHT_T_DAMPER_MOTOR", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Right temperature damper motor wanted position"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D904"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_AIR_DISTRIBUTION", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Air distribution damper motor wanted position"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D905"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DEFROSTER_DAMPER_ACT", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Defroster damper motor, actual position"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D906"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RECIRCULATION_DAMPER_ACT", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Recirculation damper motor, actual position"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D907"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_LEFT_T_DAMPER_MOTOR_ACT", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Left temperature damper motor, actual position"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D908"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RIGHT_T_DAMPER_MOTOR_ACT", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Right temperature damper motor, actual position"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D909"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_AIR_DISTRIBUTION_ACT", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Air distribution damper motor, actual position"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D918"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_REAR_DEFROSTER", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Rear defroster automatic"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D930"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_T_LEFT_SETTING_MS", "path": "Engine", "fmt": { "len": 16, "max": 32767, "div": 2, "unit": "celsius" }, "name": "Temperature left setting"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D931"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_T_RIGHT_SETTING_MS", "path": "Engine", "fmt": { "len": 16, "max": 32767, "div": 2, "unit": "celsius" }, "name": "Temperature right setting"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D950"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_CABIN_FAN_SPD_REQ_MS", "path": "Movement", "fmt": { "len": 16, "max": 1023, "div": 64, "unit": "percent" }, "name": "Cabin fan speed, requested"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D998"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_EVAPORATOR_T_MS_CAN", "path": "Engine", "fmt": { "len": 16, "max": 923, "min": -100, "div": 64, "add": -100, "unit": "celsius" }, "name": "Evaporator temperature"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "D9FE"}, "freq": 3600, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_CEM_COLD_ZONE", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cold zone count"}
+  ]},
+{ "hdr": "733", "dbg": true, "cmd": {"22": "DCF9"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_AIR_QUALITY_SENS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Air quality sensor status"}
+  ]},
+{ "hdr": "736", "dbg": true, "cmd": {"22": "B112"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RL_DIST", "path": "Trips", "fmt": { "len": 8, "max": 255, "unit": "unknown" }, "name": "Rear left distance"}
+  ]},
+{ "hdr": "736", "dbg": true, "cmd": {"22": "B113"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RR_DIST", "path": "Trips", "fmt": { "len": 8, "max": 255, "unit": "unknown" }, "name": "Rear right distance"}
+  ]},
+{ "hdr": "736", "dbg": true, "cmd": {"22": "B114"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RL_INNER_DIST", "path": "Trips", "fmt": { "len": 8, "max": 255, "unit": "unknown" }, "name": "Rear left inner distance"}
+  ]},
+{ "hdr": "736", "dbg": true, "cmd": {"22": "B115"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RR_INNER_DIST", "path": "Trips", "fmt": { "len": 8, "max": 255, "unit": "unknown" }, "name": "Rear right inner distance"}
+  ]},
+{ "hdr": "736", "dbg": true, "cmd": {"22": "B116"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FL_DIST", "path": "Trips", "fmt": { "len": 8, "max": 255, "unit": "unknown" }, "name": "Front left distance"}
+  ]},
+{ "hdr": "736", "dbg": true, "cmd": {"22": "B117"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FR_DIST", "path": "Trips", "fmt": { "len": 8, "max": 255, "unit": "unknown" }, "name": "Front right distance"}
+  ]},
+{ "hdr": "736", "dbg": true, "cmd": {"22": "B118"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FL_INNER_DIST", "path": "Trips", "fmt": { "len": 8, "max": 255, "unit": "unknown" }, "name": "Front left inner distance"}
+  ]},
+{ "hdr": "736", "dbg": true, "cmd": {"22": "B119"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FR_INNER_DIST", "path": "Trips", "fmt": { "len": 8, "max": 255, "unit": "unknown" }, "name": "Front right inner distance"}
+  ]},
+{ "hdr": "736", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_PAM", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "737", "dbg": true, "cmd": {"22": "5B19"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SEAT_BUCKLE_DRIVER", "path": "Engine", "fmt": { "len": 8, "max": 127, "div": 2, "unit": "scalar" }, "name": "Seat buckle driver locked"}
+  ]},
+{ "hdr": "737", "dbg": true, "cmd": {"22": "5B1A"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SEAT_BUCKLE", "path": "Engine", "fmt": { "len": 8, "max": 127, "div": 2, "unit": "scalar" }, "name": "Seat buckle passenger locked"}
+  ]},
+{ "hdr": "737", "dbg": true, "cmd": {"22": "5B28"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PASSENGER_AIRBAG", "path": "Engine", "fmt": { "len": 8, "max": 127, "div": 2, "unit": "scalar" }, "name": "Passenger airbag cutoff switch"}
+  ]},
+{ "hdr": "737", "dbg": true, "cmd": {"22": "5B29"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PASSENGER_AIRBAG_ACTIVATED", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Passenger airbag activated"}
+  ]},
+{ "hdr": "737", "dbg": true, "cmd": {"22": "5B46"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SEAT_BUCKLE_RL", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Seat buckle rear left locked"}
+  ]},
+{ "hdr": "737", "dbg": true, "cmd": {"22": "5B47"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SEAT_BUCKLE_REAR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Seat buckle rear center locked"}
+  ]},
+{ "hdr": "737", "dbg": true, "cmd": {"22": "5B48"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SEAT_BUCKLE_RR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Seat buckle rear right locked"}
+  ]},
+{ "hdr": "737", "dbg": true, "cmd": {"22": "61A5"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PASSENGER_AIRBAG_OFF", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 7.96, "div": 32, "unit": "scalar" }, "name": "Passenger airbag OFF lamp"}
+  ]},
+{ "hdr": "737", "dbg": true, "cmd": {"22": "D901"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_V_SUP", "path": "Battery", "fmt": { "len": 8, "max": 20.4, "mul": 2, "div": 25, "unit": "volts" }, "name": "Voltage supply"}
+  ]},
+{ "hdr": "737", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_SRS", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "740", "dbg": true, "cmd": {"22": "A4A7"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DRIVERS_DOOR_REAR_X", "path": "Doors", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "Drivers door rear mirror x-axis"}
+  ]},
+{ "hdr": "740", "dbg": true, "cmd": {"22": "A4A8"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DRIVERS_DOOR_REAR_Y", "path": "Doors", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "Drivers door rear mirror y-axis"}
+  ]},
+{ "hdr": "740", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_DDM_MS_CAN", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "741", "dbg": true, "cmd": {"22": "A4A7"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PASSENGER_DOOR_REAR_X", "path": "Doors", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "Passenger door rear mirror x-axis"}
+  ]},
+{ "hdr": "741", "dbg": true, "cmd": {"22": "A4A8"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PASSENGER_DOOR_REAR_MIRROR_X", "path": "Doors", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "Passenger door rear mirror x-axis"}
+  ]},
+{ "hdr": "741", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_PDM_MS_CAN", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "756", "dbg": true, "cmd": {"22": "2B14"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PARK_BRAKE_SWITCH", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Park brake switch"}
+  ]},
+{ "hdr": "756", "dbg": true, "cmd": {"22": "2B1A"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_LEFT_PARKING_BRAKE",  "path": "Control", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "scalar" }, "name": "Left parking brake pad"},
+    {"id": "XC60_RIGHT_PARKING_BRAKE", "path": "Control", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "scalar" }, "name": "Right parking brake pad"}
+  ]},
+{ "hdr": "756", "dbg": true, "cmd": {"22": "2B20"}, "freq": 3600, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PARKING_BRAKE_CNT", "path": "Control", "fmt": {"bix": 16, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Parking brake static use count"}
+  ]},
+{ "hdr": "756", "dbg": true, "cmd": {"22": "2B21"}, "freq": 3600, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PARKING_BRAKE_CNT_DYNAMIC", "path": "Control", "fmt": {"bix": 16, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Parking brake dynamic use count"}
+  ]},
+{ "hdr": "756", "dbg": true, "cmd": {"22": "2B24"}, "freq": 3600, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PARKING_BRAKE_NORMAL_0_32", "path": "Control", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Parking brake normal 0 /maintenance 32"}
+  ]},
+{ "hdr": "756", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_PBM", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "2B00"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BRAKE_LIGHT_SWITCH", "path": "Lights", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Brake light switch"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "2B05"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DTSC_SWITCH", "path": "Engine", "fmt": { "len": 8, "max": 2.98, "min": -1, "div": 64, "add": -1, "unit": "scalar" }, "name": "Traction control switch indicator"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "2B06"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FL_WHL_SPD_760", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "2B07"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FR_WHL_SPD_760", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "2B08"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RL_WHL_SPD_760", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "2B09"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RR_WHL_SPD_760", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "2B0B"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_YAW_RATE_SIG", "path": "Engine", "fmt": { "len": 16, "max": 6553, "min": -6553, "div": 5, "sign": true, "unit": "unknown" }, "name": "Yaw rate signal"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "2B0C"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_LATERAL_ANG", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "degrees" }, "name": "Lateral angle"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "2B0D"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BRAKE_P", "path": "Control", "fmt": { "len": 16, "max": 21845, "div": 3, "unit": "bars" }, "name": "Brake pressure"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "2B35"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PEDAL_POS_SENS", "path": "Engine", "fmt": { "len": 16, "max": 2621, "div": 25, "unit": "millimeters" }, "name": "- pedal position sensor"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "3302"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_STEER_ANG_ACT", "path": "Engine", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "unknown" }, "name": "Steering angle, actual value"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_BCM", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "DD05"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_OUTDOOR_T_BCM", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Outdoor temperature, BCM"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "EE03"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SAS_STEER_WHL_ANG",    "path": "Tires",    "fmt": {           "len": 16, "max": 1433,  "min": -1433, "div": 22.8533, "sign": true, "unit": "degrees"                }, "name": "Steering wheel angle sensor offset"},
+    {"id": "XC60_BRAKE_P_SENS_OFFSET",  "path": "Control",  "fmt": {"bix": 32, "len": 16, "max": 40.95,               "div": 1600,                  "unit": "bars"                   }, "name": "Brake pressure sensor offset"},
+    {"id": "XC60_LATERAL",              "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 0.579,               "div": 113000,                "unit": "metersPerSecondSquared" }, "name": "Lateral acceleration sensor offset"},
+    {"id": "XC60_YAW_RATE_SENS_OFFSET", "path": "Engine",   "fmt": {"bix": 64, "len": 16, "max": 18.72,               "div": 3500,                  "unit": "unknown"                }, "name": "Yaw rate sensor offset"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "EE04"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SAS_STEER_WHL_ANG_SENS", "path": "Tires",    "fmt": {           "len": 16, "max": 22.42,  "min": -22.42, "div": 1461,    "sign": true, "unit": "degrees"                }, "name": "Steering wheel angle sensor stored offset"},
+    {"id": "XC60_LATERAL_ACCELEROMETER",  "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 0.0588,                "div": 1113000,               "unit": "metersPerSecondSquared" }, "name": "Lateral acceleration sensor stored offset"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "EE07"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FL_BRAKE_DISC_T_CALC", "path": "Control", "fmt": {           "len": 8, "max": 918, "mul": 18, "div": 5, "unit": "celsius" }, "name": "Front left brake disc temperature, calculated"},
+    {"id": "XC60_FR_BRAKE_DISC_T_CALC", "path": "Control", "fmt": {"bix": 8,  "len": 8, "max": 918, "mul": 18, "div": 5, "unit": "celsius" }, "name": "Front right brake disc temperature, calculated"},
+    {"id": "XC60_RL_BRAKE_DISC_T_CALC", "path": "Control", "fmt": {"bix": 16, "len": 8, "max": 918, "mul": 18, "div": 5, "unit": "celsius" }, "name": "Rear left brake disc temperature, calculated"},
+    {"id": "XC60_RR_BRAKE_DISC_T_CALC", "path": "Control", "fmt": {"bix": 24, "len": 8, "max": 918, "mul": 18, "div": 5, "unit": "celsius" }, "name": "Rear right brake disc temperature, calculated"}
+  ]},
+{ "hdr": "760", "dbg": true, "cmd": {"22": "FDC6"}, "freq": 15, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ITPMS_LOW_SPD",  "path": "Movement", "fmt": {          "len": 8, "max": 255, "unit": "percent" }, "name": "Indirect tire pressure monitoring low speed calibration"},
+    {"id": "XC60_ITPMS_HIGH_SPD", "path": "Movement", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "percent" }, "name": "Indirect tire pressure monitoring high speed calibration"}
+  ]},
+{ "hdr": "764", "dbg": true, "cmd": {"22": "9969"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FRONT_CAMERA_V_SUP", "path": "Battery", "fmt": { "len": 8, "max": 20.4, "mul": 2, "div": 25, "unit": "volts" }, "name": "Front camera voltage supply"}
+  ]},
+{ "hdr": "764", "dbg": true, "cmd": {"22": "A220"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_AUTOMATIC_ALIGNMENT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "degrees" }, "name": "Automatic alignment offset"}
+  ]},
+{ "hdr": "764", "dbg": true, "cmd": {"22": "A223"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PRIMARY_TGT_RANGE_M", "path": "Trips", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Primary, target range, m"}
+  ]},
+{ "hdr": "764", "dbg": true, "cmd": {"22": "D112"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_V_SUP_764", "path": "Battery", "fmt": { "len": 8, "max": 20.4, "mul": 2, "div": 25, "unit": "volts" }, "name": "Voltage supply"}
+  ]},
+{ "hdr": "764", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_FSM", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "775", "dbg": true, "cmd": {"22": "D111"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TAILGATE_POWER_SUP", "path": "Engine", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Tailgate power supply"}
+  ]},
+{ "hdr": "775", "dbg": true, "cmd": {"22": "D900"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TAILGATE_HANDLE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Tailgate handle button"}
+  ]},
+{ "hdr": "775", "dbg": true, "cmd": {"22": "D901"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TAILGATE_SWITCH_1_2", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Tailgate switch 1-2"}
+  ]},
+{ "hdr": "775", "dbg": true, "cmd": {"22": "D904"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TAILGATE_HALL_SENS", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Tailgate hall sensor signal"}
+  ]},
+{ "hdr": "775", "dbg": true, "cmd": {"22": "D907"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TAILGATE_OPENING", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Tailgate opening motor"}
+  ]},
+{ "hdr": "775", "dbg": true, "cmd": {"22": "D908"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TAILGATE_CLOSING", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Tailgate closing motor"}
+  ]},
+{ "hdr": "775", "dbg": true, "cmd": {"22": "D909"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TAILGATE_OPENING_POS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Tailgate opening position"}
+  ]},
+{ "hdr": "775", "dbg": true, "cmd": {"22": "EE04"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_TAILGATE_MOTOR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Tailgate motor protection"}
+  ]},
+{ "hdr": "784", "dbg": true, "cmd": {"22": "8012"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SENSUS_CONNECT_GPS",         "path": "Engine", "fmt": {            "len": 16, "max": 364,   "div": 180, "unit": "degrees" }, "name": "Navigation altitude"},
+    {"id": "XC60_SENSUS_CONNECT_GPS_FIX_MS",  "path": "Engine", "fmt": {"bix": 80,  "len": 8,  "max": 255,               "unit": "degrees" }, "name": "Navigation fix"},
+    {"id": "XC60_SENSUS_CONNECT_GPS_HEADING", "path": "Engine", "fmt": {"bix": 104, "len": 16, "max": 65535,             "unit": "degrees" }, "name": "Navigation heading"}
+  ]},
+{ "hdr": "784", "dbg": true, "cmd": {"22": "8035"}, "freq": 3600, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SENSUS_CONNECT_GPS_NUM", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Navigation number of satellites"}
+  ]},
+{ "hdr": "784", "dbg": true, "cmd": {"22": "831F"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_MOST_OPTICAL_FIBRE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Infotainment ring optical fiber test"}
+  ]},
+{ "hdr": "784", "dbg": true, "cmd": {"22": "8335"}, "freq": 3600, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_MOST_NETWORK_NUM", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "MOST network number of modules"}
+  ]},
+{ "hdr": "784", "dbg": true, "cmd": {"22": "D904"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_CTRL_MODULE_V_MS_CAN", "path": "Battery", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "Control module voltage"}
+  ]},
+{ "hdr": "784", "dbg": true, "cmd": {"22": "D906"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_DISPLAY_T_MS_CAN", "path": "Engine", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "scalar" }, "name": "Display temperature"}
+  ]},
+{ "hdr": "784", "dbg": true, "cmd": {"22": "DB01"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_LCD_ILUMINATION", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Display illumination intensity"}
+  ]},
+{ "hdr": "784", "dbg": true, "cmd": {"22": "DB16"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_MOST_LOCK_MS_CAN", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "MOST lock"}
+  ]},
+{ "hdr": "784", "dbg": true, "cmd": {"22": "DD07"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_POWER_MODE_MS_CAN", "path": "Engine", "fmt": { "len": 8, "max": 156, "min": -99, "add": -99, "unit": "scalar" }, "name": "Power mode"}
+  ]},
+{ "hdr": "791", "dbg": true, "cmd": {"22": "D111"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_V_SUP_MS_CAN", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Voltage supply"}
+  ]},
+{ "hdr": "791", "dbg": true, "cmd": {"22": "D901"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_CHG_MS_CAN", "path": "Engine", "fmt": { "len": 8, "max": 254, "min": -1, "add": -1, "unit": "scalar" }, "name": "Charging"}
+  ]},
+{ "hdr": "793", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_CVM", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "794", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_PPM", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "1944"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_HALDEX_P", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "unknown" }, "name": "All-wheel drive coupling pressure"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "1945"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_HALDEX_CURRENT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "All-wheel drive coupling current"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "1946"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_HALDEX_CURRENT_795", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "All-wheel drive coupling current"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "2B06"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FL_WHL_SPD_795", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "2B07"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FR_WHL_SPD_795", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "2B08"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RL_WHL_SPD_795", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "2B09"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RR_WHL_SPD_795", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "D116"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_HALDEX_ECU_T_SENS_1", "path": "Engine", "fmt": { "len": 8, "max": 127, "min": -128, "sign": true, "unit": "celsius" }, "name": "All-wheel drive coupling module temperature sensor 1"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "D900"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_HALDEX_ECU_T_SENS_2", "path": "Engine", "fmt": { "len": 8, "max": 127, "min": -128, "sign": true, "unit": "celsius" }, "name": "All-wheel drive coupling module temperature sensor 2"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "D930"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_HALDEX_REAR_AXLE_TQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "newtonMeters" }, "name": "All-wheel drive coupling rear axle torque"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "D953"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_HALDEX_REAR_AXLE_TQ_REQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "newtonMeters" }, "name": "All-wheel drive coupling rear axle torque, requested"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "D956"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_INPUT_TQ_REQ", "path": "Engine", "fmt": { "len": 16, "max": 507904, "min": -16376, "mul": 8, "add": -16376, "unit": "newtonMeters" }, "name": "Input torque, requested"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "D962"}, "freq": 0.25, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_INPUT_TQ_CALC", "path": "Engine", "fmt": { "len": 16, "max": 507904, "min": -16376, "mul": 8, "add": -16376, "unit": "newtonMeters" }, "name": "Input torque calculated"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_HALDEX_DIST", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "All-wheel drive coupling distance"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "DD02"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_MECU_V", "path": "Battery", "fmt": { "len": 8, "max": 63.75, "div": 4, "unit": "volts" }, "name": "All-wheel drive coupling module voltage"}
+  ]},
+{ "hdr": "795", "dbg": true, "cmd": {"22": "FD04"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_HALDEX_OIL_T", "path": "Engine", "fmt": { "len": 8, "max": 195, "min": -60, "add": -60, "unit": "celsius" }, "name": "All-wheel drive coupling oil temperature"}
+  ]},
+{ "hdr": "797", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_ODO_SAS", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7C0", "dbg": true, "cmd": {"22": "D904"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_M3_ADM_ADDITIVE_PMP", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Diesel particulate filter additive pump"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "033E"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_BOOST_P_AFTER", "path": "Battery", "fmt": { "len": 16, "max": 500, "min": -0.0534, "div": 131, "add": -0.053435, "unit": "kilopascal" }, "name": "Boost pressure after turbocharger"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0341"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_BOOST_AIR_T_7E0", "path": "Engine", "fmt": { "len": 8, "max": 119, "min": -40, "mul": 5, "div": 8, "add": -40, "unit": "celsius" }, "name": "Boost air temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0707"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_GRILL_SHUTTER_OPEN", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Grill shutter open"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D900"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_AC_P", "path": "Engine", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "kilopascal" }, "name": "Air conditioning pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D909"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_AC_RELAY", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Air conditioning relay"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D916"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_AIR_FLOW_CYCLE_MG_S", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "scalar" }, "name": "Air flow/cycle, mg/s"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D91C"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_M3_IAT_MAF", "path": "Engine", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "celsius" }, "name": "M3 IAT, MAF"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D91F"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_AIR_MASS_DES", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "unknown" }, "name": "Air mass, desired"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D924"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_ALTERNATOR_AMPS", "path": "Engine", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "amps" }, "name": "Alternator, amps"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D941"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_BOOST_P", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "kilopascal" }, "name": "Boost pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D943"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_BRAKE_SWITCH", "path": "Control", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "scalar" }, "name": "Brake switch"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D94F"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_SYSTEM_RELAY", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "System relay"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D950"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_STARTER_RELAY", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Starter relay"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D953"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_BAT_RELAY", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Battery relay"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D95B"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_CLT_PMP_RELAY", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Coolant pump relay"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D96C"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_M3_EGR_DC", "path": "Engine", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "percent" }, "name": "M3 EGR DC"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D96D"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_EGR_VLV_CMD_POS_II", "path": "Engine", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "percent" }, "name": "Exhaust gas recirculation valve, commanded position II"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D99C"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FUEL_T", "path": "Fuel", "fmt": { "len": 16, "max": 3003, "min": -3549, "div": 10, "add": -273, "sign": true, "unit": "celsius" }, "name": "Fuel temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D9A0"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_GLOW_PLUGS", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 655, "div": 100, "unit": "percent" }, "name": "Glow plugs"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D9A1"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_ATF_T_VAR_3", "path": "Transmission", "fmt": { "len": 8, "max": 195, "min": -60, "add": -60, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 3"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D9AB"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_TMAP_IAT", "path": "Engine", "fmt": { "len": 16, "max": 3003, "min": -3549, "div": 10, "add": -273.14, "sign": true, "unit": "celsius" }, "name": "Intake air temperature, manifold sensor"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D9B8"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_CTRL_MODULE_T", "path": "Engine", "fmt": { "len": 8, "max": 119, "min": -40, "mul": 5, "div": 8, "add": -40, "unit": "celsius" }, "name": "Control module temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D9DC"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_EOT", "path": "Engine", "fmt": { "len": 16, "max": 6280, "min": -273, "div": 10, "add": -273.14, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D9E4"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_BOOST_P_DES", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "kilopascal" }, "name": "Boost pressure, desired value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D9EE"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FUEL_P_REGULATOR_VLV", "path": "Fuel", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Fuel pressure regulator valve current"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D9F2"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_DPF_SOOT",    "path": "Engine", "fmt": {           "len": 16, "max": 655,  "div": 100,   "unit": "unknown" }, "name": "Diesel particulate filter soot"},
+    {"id": "XC60_M3_DPF_SOOT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 6.55, "div": 10000, "unit": "gravity" }, "name": "M3 DPF soot"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D9F3"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_M3_DIFF_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "unknown" }, "name": "M3 diff.press."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D9F9"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_DPF_T", "path": "Engine", "fmt": { "len": 16, "max": 6280, "min": -273, "div": 10, "add": -273.14, "unit": "celsius" }, "name": "Diesel particulate filter temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D9FF"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FUEL_P_NOMINAL", "path": "Fuel", "fmt": { "len": 16, "max": 6553500, "mul": 100, "unit": "unknown" }, "name": "Fuel pressure nominal value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DA03"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_MIS_CATALYTIC_DAMAGE", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire catalytic damage total - petrol"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DA04"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_MIS_EMISSION_RELATED", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire emission related total - petrol"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DA12"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_STARTER_RELAY_1", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Starter relay 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DA40"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_GEAR_POS", "path": "Transmission", "fmt": { "len": 8, "max": 127, "min": -128, "sign": true, "unit": "scalar" }, "name": "Gear, AT position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DA59"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FRONT_OXYGEN_SENS", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "milliseconds" }, "name": "Front oxygen sensor heating"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DAAD"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_EGR_VLV_POS_SENS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "percent" }, "name": "Exhaust gas recirculation valve position sensor"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DAB6"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_MIS_AVG_1", "path": "Engine", "fmt": {            "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 1 misfire average"},
+    {"id": "XC60_MIS_AVG_2", "path": "Engine", "fmt": {"bix": 16,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 2 misfire average"},
+    {"id": "XC60_MIS_AVG_3", "path": "Engine", "fmt": {"bix": 32,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 3 misfire average"},
+    {"id": "XC60_MIS_AVG_4", "path": "Engine", "fmt": {"bix": 48,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 4 misfire average"},
+    {"id": "XC60_MIS_AVG_5", "path": "Engine", "fmt": {"bix": 64,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 5 misfire average"},
+    {"id": "XC60_MIS_AVG_6", "path": "Engine", "fmt": {"bix": 80,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 6 misfire average"},
+    {"id": "XC60_MIS_AVG_7", "path": "Engine", "fmt": {"bix": 96,  "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 7 misfire average"},
+    {"id": "XC60_MIS_AVG_8", "path": "Engine", "fmt": {"bix": 112, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Cylinder 8 misfire average"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DAC8"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_DPF_P", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "unknown" }, "name": "Diesel particulate filter pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DAD2"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_EGR_COOLER_BYPASS", "path": "Engine", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "percent" }, "name": "Exhaust gas recirculation cooler bypass actuator position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DAD5"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FUEL_VOLUME_CTRL_VLV", "path": "Fuel", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "percent" }, "name": "Fuel volume control valve"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DB35"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FUEL_FLT_HEATER_7E0", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Fuel filter heater"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DB77"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_REAR_OXYGEN_SENS", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "milliseconds" }, "name": "Rear oxygen sensor heating"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DC00"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_TURBO_CTRL_VLV", "path": "Engine", "fmt": { "len": 16, "max": 800, "mul": 100, "div": 8191, "unit": "percent" }, "name": "Turbo control valve, bypass or variable nozzle"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DC01"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_EGR_VLV_CMD_POS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "percent" }, "name": "Exhaust gas recirculation valve, commanded position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DC02"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FAN", "path": "Engine", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "percent" }, "name": "Fan"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DC10"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_TURBO_CTRL_VLV_WASTEGATE", "path": "Engine", "fmt": { "len": 16, "max": 800, "mul": 100, "div": 8191, "unit": "percent" }, "name": "Turbo control valve wastegate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DC13"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FUEL_VOLUME_CTRL_VLV_7E0", "path": "Fuel", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "percent" }, "name": "Fuel volume control valve"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DC14"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FUEL_FLT_HEATER", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Fuel filter heater"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_MILEAGE_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "EE7F"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_EGR_BYPASS_VLV", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Exhaust gas recirculation bypass valve"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "EE84"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_SUPERCHARGER_CLU_REQ", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Supercharger clutch, requested position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "EEEB"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_STARTER_RELAY_2", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Starter relay 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "EF44"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_START_STOP_BRAKE_P", "path": "Control", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "kilopascal" }, "name": "Start/stop brake booster pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "EF4E"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_EOP", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "kilopascal" }, "name": "Engine oil pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "EF51"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_START_STOP_BAT_RELAY", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Start/stop battery relay"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "EF52"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_START_STOP_SECONDARY", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Start/stop secondary battery relay"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "EF59"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FUEL_PMP_LOW_P_SIDE", "path": "Fuel", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "percent" }, "name": "Fuel pump low pressure side duty cycle"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F404"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_CALC_LOAD", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Calculated load", "suggestedMetric": "engineLoad"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F40E"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_IGN_ANG_BTDC", "path": "Engine", "fmt": { "len": 8, "max": 63.5, "min": -64, "div": 2, "add": -64, "unit": "scalar" }, "name": "Ignition angle before top dead center"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F40F"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_M3_IAT_BUTTERFLY", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "M3 IAT, butterfly"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F411"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_THROTTLE_ABS_POS", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Throttle absolute position", "suggestedMetric": "throttlePosition"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F41F"}, "freq": 30, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_TIME_SINCE_ENG_START", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Time since engine start"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F423"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FUEL_P", "path": "Fuel", "fmt": { "len": 16, "max": 6553500, "mul": 100, "unit": "unknown" }, "name": "Fuel pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F42F"}, "freq": 30, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FLI_INPUT", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Fuel level input", "suggestedMetric": "fuelTankLevel"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F443"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LOAD", "path": "Engine", "fmt": { "len": 16, "max": 25700, "mul": 20, "div": 51, "unit": "percent" }, "name": "Load"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F449"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_M3_APP_ECM", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Accelerator pedal position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F44A"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_M3_APP_CAN", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "M3 APP, CAN"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F6A2"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_MIS_1", "path": "Engine", "fmt": {"bix": 96, "len": 8, "max": 255, "unit": "scalar" }, "name": "Cylinder 1 misfire"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F6A3"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_MIS_2", "path": "Engine", "fmt": {"bix": 96, "len": 8, "max": 255, "unit": "scalar" }, "name": "Cylinder 2 misfire"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F6A4"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_MIS_3", "path": "Engine", "fmt": {"bix": 96, "len": 8, "max": 255, "unit": "scalar" }, "name": "Cylinder 3 misfire"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F6A5"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_MIS_4", "path": "Engine", "fmt": {"bix": 96, "len": 8, "max": 255, "unit": "scalar" }, "name": "Cylinder 4 misfire"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E14"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_T_CONV", "path": "Transmission", "fmt": { "len": 16, "max": 65535, "unit": "percent" }, "name": "A/T converter"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E16"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_ACT_GEAR_RAT", "path": "Transmission", "fmt": { "len": 16, "max": 15.99, "div": 4096, "unit": "scalar" }, "name": "AT, actual gear ratio"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E19"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_EXPECTED_GEAR_RAT", "path": "Transmission", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "scalar" }, "name": "Transmission expected gear ratio"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E1B"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_SLAVE_T", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Slave A/T"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E1E"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission line pressure solenoid current, requested"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E24"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_FIXED_LOCK_UP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Transmission fixed lock-up"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E2F"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LEADING_T", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Leading A/T"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E3F"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_ATF_T_7E1", "path": "Transmission", "fmt": { "len": 16, "max": 8191, "min": -8192, "div": 4, "sign": true, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E40"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SLT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission line pressure solenoid current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E41"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LOCK_UP_SOLENOID_SLU", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Torque converter lock-up solenoid current, requested"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E42"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SLC1_REQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SLC1, requested, current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E43"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SLC2_REQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SLC2, requested, current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E44"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SLC3_REQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SLC3, requested, current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E45"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SLB1_REQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SLB1, requested, current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E47"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LOCK_UP_SOLENOID_SLU_CURRENT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Torque converter lock-up solenoid current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E48"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SLC1", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SLC1 current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E49"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SLC2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SLC2 current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "1E4A"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SLC3", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SLC3 current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "6310"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_GEAR_SELECTOR_P_0_R_1_N_2_D_3", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Transmission gear selector p, 0 r, 1 n, 2 d, 3"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "D904"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_ATF_T_VAR_2", "path": "Transmission", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 2"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "D90C"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_SLC1_CURRENT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "SLC1 current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "D90F"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_SLC2_CURRENT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "SLC2 current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "D910"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_SLC3_CURRENT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "SLC3 current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA34"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_GEAR_RAT_ACT_7E1", "path": "Transmission", "fmt": { "len": 16, "max": 15.99, "div": 4096, "unit": "scalar" }, "name": "Gear ratio, actual"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA3B"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_ATF_T_VAR_2_7E1", "path": "Transmission", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 2"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA3C"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LOCK_UP_FUNCTION", "path": "Engine", "fmt": { "len": 8, "max": 84.66, "min": -0.333, "div": 3, "add": -0.333333, "unit": "scalar" }, "name": "Transmission lock-up function"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA47"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_GEAR_RAT_EXPECTED", "path": "Transmission", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "scalar" }, "name": "Gear ratio expected"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA49"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SLT_REQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission line pressure solenoid current, requested"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA4A"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SLT_CURRENT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission line pressure solenoid current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA4B"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LOCK_UP_SOLENOID_SLU_REQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Torque converter lock-up solenoid, requested"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA4C"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LOCK_UP_SOLENOID_SLU_7E1", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Torque converter lock-up solenoid"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA4D"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SL1_REQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SL1, requested, current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA4E"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SL1", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SL1 current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA4F"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SL2_REQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SL2, requested, current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA50"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SL2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SL2 current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA51"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SL3_REQ", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SL3, requested, current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DA52"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_LINEAR_P_SOLENOID_SL3", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Transmission linear pressure solenoid SL3 current"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DCE4"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_KICKDOWN", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Transmission kickdown"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DCEA"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_SELECTOR", "path": "Engine", "fmt": { "len": 8, "max": 127, "div": 2, "unit": "scalar" }, "name": "Transmission selector"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DCF0"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_TQ_LIMITING", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "newtonMeters" }, "name": "Transmission torque limiting"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_ODO_TCM", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DD02"}, "freq": 5, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_MECU_SUP_V", "path": "Battery", "fmt": { "len": 8, "max": 63.75, "div": 4, "unit": "volts" }, "name": "Transmission control module supply voltage"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DD81"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_GEAR_7E1", "path": "Transmission", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Transmission gear"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DD89"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_SOLENOID_S1_STAT", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Transmission solenoid S1 status"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DD8A"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_SOLENOID_S2_STAT", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Transmission solenoid S2 status"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DD8D"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_TQ", "path": "Engine", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Transmission torque"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DD8E"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_ACCEL_PEDAL_POS", "path": "Movement", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Accelerator pedal position"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "DF08"}, "freq": 1, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_START_LOCK_START", "path": "Engine", "fmt": { "len": 8, "max": 1, "div": 255, "unit": "scalar" }, "name": "Transmission start lock - start approved"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "E504"}, "freq": 0.25, "filter": { "to": 2021 },
+  "signals": [
+    {"id": "XC60_BRAKE_PEDAL_POS", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Brake pedal position"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "9A03"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_FUEL_HEATER_FAN_ADJ", "path": "Fuel", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Fuel heater fan adjustment"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "9A04"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_GLOW_PLUG_RAT_MS_CAN", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Glow plug pulse ratio"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "9A06"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_COMBUSTION_AIR_FAN", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Combustion air fan"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "9A08"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_OP_ST_MS_CAN", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Operating state"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "9A0B"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_BURNING_TIME_HOURS",   "path": "Engine", "fmt": {           "len": 16, "max": 65535, "unit": "unknown" }, "name": "Burning time, hours"},
+    {"id": "XC60_BURNING_TIME_MINUTES", "path": "Engine", "fmt": {"bix": 16, "len": 8,  "max": 255,   "unit": "scalar"  }, "name": "Burning time, minutes"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "9A0C"}, "freq": 3600, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_RUNNING_TIME_HOURS",   "path": "Engine", "fmt": {           "len": 16, "max": 65535, "unit": "unknown" }, "name": "Running time, hours"},
+    {"id": "XC60_RUNNING_TIME_MINUTES", "path": "Engine", "fmt": {"bix": 16, "len": 8,  "max": 255,   "unit": "scalar"  }, "name": "Running time, minutes"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "9A0D"}, "freq": 3600, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_CNT_MS_CAN", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Counter"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "9A0E"}, "freq": 3600, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_PARKING_HEATER_CNT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Parking heater counter"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "9A0F"}, "freq": 3600, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_SUPPLEMENTARY_HEATER", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Supplementary heater counter"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "DD04"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_CAR_T_MS_CAN_7E3", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "In car temperature"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "DD06"}, "freq": 1, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_POWER_MODE_MS_CAN_7E3", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Power mode"}
+  ]},
+{ "hdr": "7E3", "dbg": true, "cmd": {"22": "F405"}, "freq": 5, "filter": { "to": 2017 },
+  "signals": [
+    {"id": "XC60_WATER_T_MS_CAN", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Water temperature"}
+  ]},
+{ "hdr": "D016", "rax": "1EC60E80", "pri": "1D", "tst": "30", "fcm1": true, "dbg": true, "cmd": {"22": "033E"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_BOOST_AIR_P_AFTER", "path": "Engine", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "kilopascal" }, "name": "Boost air pressure after turbocharger"}
+  ]},
+{ "hdr": "D016", "rax": "1EC60E80", "pri": "1D", "tst": "30", "fcm1": true, "dbg": true, "cmd": {"22": "0341"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_BOOST_AIR_T", "path": "Engine", "fmt": { "len": 8, "max": 119, "min": -40, "mul": 5, "div": 8, "add": -40, "unit": "celsius" }, "name": "Boost air temperature"}
+  ]},
+{ "hdr": "D016", "rax": "1EC60E80", "pri": "1D", "tst": "30", "fcm1": true, "dbg": true, "cmd": {"22": "D9EE"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_TURBO_BYPASS_VLV", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Turbo bypass valve opened"}
+  ]},
+{ "hdr": "D016", "rax": "1EC60E80", "pri": "1D", "tst": "30", "fcm1": true, "dbg": true, "cmd": {"22": "DC80"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_WASTEGATE_POS", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Wastegate position"}
+  ]},
+{ "hdr": "D016", "rax": "1EC62E80", "pri": "1D", "tst": "31", "fcm1": true, "dbg": true, "cmd": {"22": "2B06"}, "freq": 0.25, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_FL_WHL_SPD", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "D016", "rax": "1EC62E80", "pri": "1D", "tst": "31", "fcm1": true, "dbg": true, "cmd": {"22": "2B07"}, "freq": 0.25, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_FR_WHL_SPD", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "D016", "rax": "1EC62E80", "pri": "1D", "tst": "31", "fcm1": true, "dbg": true, "cmd": {"22": "2B08"}, "freq": 0.25, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_RL_WHL_SPD", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "D016", "rax": "1EC62E80", "pri": "1D", "tst": "31", "fcm1": true, "dbg": true, "cmd": {"22": "2B09"}, "freq": 0.25, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_RR_WHL_SPD", "path": "Tires", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "D016", "rax": "1EC62E80", "pri": "1D", "tst": "31", "fcm1": true, "dbg": true, "cmd": {"22": "FEE7"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_FL_BRAKE_DISC_T", "path": "Control", "fmt": {           "len": 16, "max": 6553, "div": 10, "unit": "celsius" }, "name": "Front left brake disc temperature"},
+    {"id": "XC60_FR_BRAKE_DISC_T", "path": "Control", "fmt": {"bix": 16, "len": 16, "max": 6553, "div": 10, "unit": "celsius" }, "name": "Front right brake disc temperature"},
+    {"id": "XC60_RL_BRAKE_DISC_T", "path": "Control", "fmt": {"bix": 32, "len": 16, "max": 6553, "div": 10, "unit": "celsius" }, "name": "Rear left brake disc temperature"},
+    {"id": "XC60_RR_BRAKE_DISC_T", "path": "Control", "fmt": {"bix": 48, "len": 16, "max": 6553, "div": 10, "unit": "celsius" }, "name": "Rear right brake disc temperature"}
+  ]},
+{ "hdr": "D016", "rax": "1EC64E80", "pri": "1D", "tst": "32", "fcm1": true, "dbg": true, "cmd": {"22": "D900"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_ATF_T_D016", "path": "Transmission", "fmt": { "len": 16, "max": 32767000, "min": -32768000, "mul": 1000, "sign": true, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "D016", "rax": "1EC64E80", "pri": "1D", "tst": "32", "fcm1": true, "dbg": true, "cmd": {"22": "DA34"}, "freq": 0.25, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_GEAR_RAT_ACT", "path": "Transmission", "fmt": { "len": 16, "max": 15.99, "mul": 61, "div": 250000, "unit": "scalar" }, "name": "Gear ratio, actual"}
+  ]},
+{ "hdr": "D016", "rax": "1EC64E80", "pri": "1D", "tst": "32", "fcm1": true, "dbg": true, "cmd": {"22": "DA38"}, "freq": 0.25, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_DRIVEN_SHFT_SPD", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Driven shaft speed"}
+  ]},
+{ "hdr": "D016", "rax": "1EC64E80", "pri": "1D", "tst": "32", "fcm1": true, "dbg": true, "cmd": {"22": "DA3B"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_ATF_T", "path": "Transmission", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "D016", "rax": "1EC64E80", "pri": "1D", "tst": "32", "fcm1": true, "dbg": true, "cmd": {"22": "DA3C"}, "freq": 0.25, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_TQ_CONV_LOCK", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Torque converter lock"}
+  ]},
+{ "hdr": "D016", "rax": "1EC64E80", "pri": "1D", "tst": "32", "fcm1": true, "dbg": true, "cmd": {"22": "DA47"}, "freq": 0.25, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_GEAR_RAT_REQ", "path": "Transmission", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "scalar" }, "name": "Gear ratio, requested"}
+  ]},
+{ "hdr": "D016", "rax": "1EC64E80", "pri": "1D", "tst": "32", "fcm1": true, "dbg": true, "cmd": {"22": "DA85"}, "freq": 0.25, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_GEAR", "path": "Transmission", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
+  ]},
+{ "hdr": "D016", "rax": "1EC64E80", "pri": "1D", "tst": "32", "fcm1": true, "dbg": true, "cmd": {"22": "DA89"}, "freq": 0.25, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_ENG_TQ", "path": "Engine", "fmt": { "len": 16, "max": 6041, "min": -512, "div": 10, "add": -512, "unit": "newtonMeters" }, "name": "Engine torque"}
+  ]},
+{ "hdr": "D016", "rax": "1EC64E80", "pri": "1D", "tst": "32", "fcm1": true, "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "D016", "rax": "1EC68E80", "pri": "1D", "tst": "34", "fcm1": true, "dbg": true, "cmd": {"22": "EE15"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_MAIN_CHARGER_CURRENT", "path": "Battery", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "amps" }, "name": "Main charger current"}
+  ]},
+{ "hdr": "D016", "rax": "1EC68E80", "pri": "1D", "tst": "34", "fcm1": true, "dbg": true, "cmd": {"22": "EE16"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_DC_CHARGER_CURRENT", "path": "Battery", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "amps" }, "name": "DC charger current"}
+  ]},
+{ "hdr": "D016", "rax": "1EC68E80", "pri": "1D", "tst": "34", "fcm1": true, "dbg": true, "cmd": {"22": "EE17"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_DC_CHARGER_V", "path": "Battery", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "volts" }, "name": "DC charger voltage"}
+  ]},
+{ "hdr": "D016", "rax": "1EC68E80", "pri": "1D", "tst": "34", "fcm1": true, "dbg": true, "cmd": {"22": "EE19"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_OBC_T", "path": "Engine", "fmt": { "len": 8, "max": 127, "min": -128, "sign": true, "unit": "celsius" }, "name": "On-board charger module temperature"}
+  ]},
+{ "hdr": "D016", "rax": "1EC68E80", "pri": "1D", "tst": "34", "fcm1": true, "dbg": true, "cmd": {"22": "EE1C"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_MAIN_CHARGER_V", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "volts" }, "name": "Main charger voltage"}
+  ]},
+{ "hdr": "D016", "rax": "1EC68E80", "pri": "1D", "tst": "34", "fcm1": true, "dbg": true, "cmd": {"22": "EE1D"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_CHG_ST", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Charging state"}
+  ]},
+{ "hdr": "D016", "rax": "1EC68E80", "pri": "1D", "tst": "34", "fcm1": true, "dbg": true, "cmd": {"22": "EE8C"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_CHG_SOCKET_LOCKED", "path": "Battery", "name": "Charging socket lock", "fmt": {"len": 8, "map": {
+          "1": { "description": "Unlocked", "value": "UNLOCKED" },
+          "2": { "description": "Locked",   "value": "LOCKED" }
+        }}
+    }
+  ]},
+{ "hdr": "D016", "rax": "1EC68E80", "pri": "1D", "tst": "34", "fcm1": true, "dbg": true, "cmd": {"22": "EE8D"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_CHARGER_CABLE", "path": "Battery", "fmt": { "len": 16, "max": 6143, "min": -410, "div": 10, "add": -410, "unit": "amps" }, "name": "Charger cable current"}
+  ]},
+{ "hdr": "D016", "rax": "1EC68E80", "pri": "1D", "tst": "34", "fcm1": true, "dbg": true, "cmd": {"22": "EEB6"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_AVG_CHG_TIME_LEFT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "minutes" }, "name": "Average charging time left"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "4801"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_ST_CHG", "path": "Battery", "fmt": { "len": 16, "max": 131, "div": 500, "unit": "percent" }, "name": "High voltage battery state of charge", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "4802"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_CURRENT", "path": "Battery", "fmt": { "len": 16, "max": 655, "min": -655, "div": 50, "sign": true, "unit": "amps" }, "name": "High voltage battery current", "suggestedMetric": "tractionBatteryCurrent"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "4803"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_V", "path": "Battery", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "High voltage battery voltage", "suggestedMetric": "tractionBatteryVoltage"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "4804"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_INLET_ECT", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "High voltage battery, inlet coolant temperature"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "4808"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_IEM_FUSE_V", "path": "Battery", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "High voltage battery, IEM fuse voltage"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "4809"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_IGM_FUSE_V", "path": "Battery", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "High voltage battery, IGM fuse voltage"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "480A"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_HVCH_FUSE_V", "path": "Battery", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "High voltage battery, high-voltage coolant heater fuse voltage"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "480B"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_OBC_FUSE_V", "path": "Battery", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "volts" }, "name": "High voltage battery, OBC fuse voltage"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "4866"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_CLT_PMP_SPD", "path": "Battery", "fmt": { "len": 8, "max": 6120, "mul": 24, "unit": "rpm" }, "name": "High voltage battery, coolant pump speed, requested"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "4867"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_CLT_PMP_SPD_ACT", "path": "Battery", "fmt": { "len": 8, "max": 6120, "mul": 24, "unit": "rpm" }, "name": "High voltage battery, coolant pump speed, actual"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "491B"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_AVG_T", "path": "Battery", "fmt": { "len": 16, "max": 605, "min": -50, "div": 100, "add": -50, "unit": "celsius" }, "name": "High voltage battery, average temperature"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6AE80", "pri": "1D", "tst": "35", "fcm1": true, "dbg": true, "cmd": {"22": "4945"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVBAT_MAX_T", "path": "Battery", "fmt": {"bix": 8, "len": 16, "max": 605, "min": -50, "div": 100, "add": -50, "unit": "celsius" }, "name": "High voltage battery, max temperature"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6EE80", "pri": "1D", "tst": "37", "fcm1": true, "dbg": true, "cmd": {"22": "EF12"}, "freq": 0.25, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_ERAD_CALC_TQ", "path": "Engine", "fmt": { "len": 16, "max": 253952, "min": -8188, "mul": 4, "add": -8188, "unit": "newtonMeters" }, "name": "Electric rear axle drive calculated torque"}
+  ]},
+{ "hdr": "D016", "rax": "1EC6EE80", "pri": "1D", "tst": "37", "fcm1": true, "dbg": true, "cmd": {"22": "EF13"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HIGH_V_SYSTEM", "path": "Engine", "fmt": { "len": 8, "max": 260, "min": -250, "mul": 2, "add": -250, "unit": "amps" }, "name": "High voltage system current"}
+  ]},
+{ "hdr": "D016", "rax": "1EC70E80", "pri": "1D", "tst": "38", "fcm1": true, "dbg": true, "cmd": {"22": "1946"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_MODULE_CURRENT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "milliamps" }, "name": "Module current"}
+  ]},
+{ "hdr": "D016", "rax": "1EC70E80", "pri": "1D", "tst": "38", "fcm1": true, "dbg": true, "cmd": {"22": "D111"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_MODULE_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Module voltage"}
+  ]},
+{ "hdr": "D016", "rax": "1EC70E80", "pri": "1D", "tst": "38", "fcm1": true, "dbg": true, "cmd": {"22": "D920"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_CLU_PMP_DUTY", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Clutch pump duty"}
+  ]},
+{ "hdr": "D016", "rax": "1EC70E80", "pri": "1D", "tst": "38", "fcm1": true, "dbg": true, "cmd": {"22": "DD01"}, "freq": 30, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_DEM_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Total distance", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "D018", "rax": "1F002E80", "pri": "1D", "tst": "01", "fcm1": true, "dbg": true, "cmd": {"22": "D903"}, "freq": 30, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_DIST_SINCE_SERVICE", "path": "Trips", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance since last service"}
+  ]},
+{ "hdr": "D018", "rax": "1F002E80", "pri": "1D", "tst": "01", "fcm1": true, "dbg": true, "cmd": {"22": "D906"}, "freq": 30, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_ODO_LAST_SERVICE", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer at last service"}
+  ]},
+{ "hdr": "D01A", "rax": "1F402E80", "pri": "1D", "tst": "01", "fcm1": true, "dbg": true, "cmd": {"22": "4025"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_AVG_STATIC_LOW_RANGE", "path": "Battery", "fmt": { "len": 16, "max": 65024, "min": -511, "add": -511, "unit": "milliamps" }, "name": "Average static low range battery current"}
+  ]},
+{ "hdr": "D01A", "rax": "1F402E80", "pri": "1D", "tst": "01", "fcm1": true, "dbg": true, "cmd": {"22": "4028"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_BAT_ST_CHG", "path": "Battery", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Battery state of charge"}
+  ]},
+{ "hdr": "D01A", "rax": "1F402E80", "pri": "1D", "tst": "01", "fcm1": true, "dbg": true, "cmd": {"22": "4090"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_BAT_CURRENT", "path": "Battery", "fmt": { "len": 16, "max": 3583, "min": -512, "div": 16, "add": -512, "unit": "amps" }, "name": "Battery current"}
+  ]},
+{ "hdr": "D01A", "rax": "1F402E80", "pri": "1D", "tst": "01", "fcm1": true, "dbg": true, "cmd": {"22": "40CD"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_BAT_V", "path": "Battery", "fmt": { "len": 16, "max": 1643, "div": 40, "add": 5, "unit": "volts" }, "name": "Battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "D01A", "rax": "1F402E80", "pri": "1D", "tst": "01", "fcm1": true, "dbg": true, "cmd": {"22": "40D3"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_AUXILIARY_BAT_T", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Auxiliary battery temperature"}
+  ]},
+{ "hdr": "D01A", "rax": "1F402E80", "pri": "1D", "tst": "01", "fcm1": true, "dbg": true, "cmd": {"22": "4112"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_AUXILIARY_BAT", "path": "Battery", "fmt": { "len": 8, "max": 128, "min": -127, "add": -127, "unit": "amps" }, "name": "Auxiliary battery current"}
+  ]},
+{ "hdr": "D01A", "rax": "1F402E80", "pri": "1D", "tst": "01", "fcm1": true, "dbg": true, "cmd": {"22": "417E"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_AUXILIARY_BAT_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Auxiliary battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "D01A", "rax": "1F422E80", "pri": "1D", "tst": "11", "fcm1": true, "dbg": true, "cmd": {"22": "4336"}, "freq": 1, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_AUXILIARY_WATER_PMP", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Auxiliary water pump duty cycle"}
+  ]},
+{ "hdr": "D01A", "rax": "1F422E80", "pri": "1D", "tst": "11", "fcm1": true, "dbg": true, "cmd": {"22": "4337"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HEAT_EXCHANGER_T_V_2", "path": "Climate", "fmt": { "len": 8, "max": 406, "min": -409, "mul": 16, "div": 5, "sign": true, "unit": "celsius" }, "name": "Heater core temperature, variant 2"}
+  ]},
+{ "hdr": "D01A", "rax": "1F422E80", "pri": "1D", "tst": "11", "fcm1": true, "dbg": true, "cmd": {"22": "4344"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVCH_CLT_INLET_T",  "path": "Climate", "fmt": {          "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "High-voltage coolant heater coolant inlet temperature"},
+    {"id": "XC60_HVCH_CLT_OUTLET_T", "path": "Climate", "fmt": {"bix": 8, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "High-voltage coolant heater coolant outlet temperature"}
+  ]},
+{ "hdr": "D01A", "rax": "1F422E80", "pri": "1D", "tst": "11", "fcm1": true, "dbg": true, "cmd": {"22": "4345"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HVCH_CURRENT_CONS",   "path": "Climate", "fmt": {           "len": 8,  "max": 63.75,              "div": 4, "unit": "amps"  }, "name": "High-voltage coolant heater current consumption"},
+    {"id": "XC60_HVCH_POWER_CONS",     "path": "Climate", "fmt": {"bix": 8,  "len": 16, "max": 1310700, "mul": 20,           "unit": "watts" }, "name": "High-voltage coolant heater power consumption"},
+    {"id": "XC60_HVCH_REQUIRED_POWER", "path": "Climate", "fmt": {"bix": 24, "len": 16, "max": 1310700, "mul": 20,           "unit": "watts" }, "name": "High-voltage coolant heater required power consumption"}
+  ]},
+{ "hdr": "D01A", "rax": "1F422E80", "pri": "1D", "tst": "11", "fcm1": true, "dbg": true, "cmd": {"22": "43BE"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_FOH_INLET_WATER_T",  "path": "Climate", "fmt": {          "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel-operated heater, inlet water temperature"},
+    {"id": "XC60_FOH_OUTLET_WATER_T", "path": "Climate", "fmt": {"bix": 8, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel-operated heater, outlet water temperature"}
+  ]},
+{ "hdr": "D01A", "rax": "1F422E80", "pri": "1D", "tst": "11", "fcm1": true, "dbg": true, "cmd": {"22": "9820"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_EVAPORATOR_T_V_2", "path": "Climate", "fmt": { "len": 8, "max": 406, "min": -409, "mul": 16, "div": 5, "sign": true, "unit": "celsius" }, "name": "Evaporator temperature v.2"}
+  ]},
+{ "hdr": "D01A", "rax": "1F422E80", "pri": "1D", "tst": "11", "fcm1": true, "dbg": true, "cmd": {"22": "9843"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_INTERIOR_T", "path": "Climate", "fmt": { "len": 8, "max": 144, "min": -60, "mul": 4, "div": 5, "add": -60, "unit": "celsius" }, "name": "Interior temperature"}
+  ]},
+{ "hdr": "D01A", "rax": "1F422E80", "pri": "1D", "tst": "11", "fcm1": true, "dbg": true, "cmd": {"22": "984F"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_EVAPORATOR_T", "path": "Climate", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "celsius" }, "name": "Evaporator temperature"}
+  ]},
+{ "hdr": "D01A", "rax": "1F422E80", "pri": "1D", "tst": "11", "fcm1": true, "dbg": true, "cmd": {"22": "9850"}, "freq": 5, "filter": { "from": 2018 },
+  "signals": [
+    {"id": "XC60_HEAT_EXCHANGER_T", "path": "Climate", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "celsius" }, "name": "Heater core temperature"}
+  ]}
 ]
 }
