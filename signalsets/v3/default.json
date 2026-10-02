@@ -1,4 +1,9 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "7E0", "type": "engine" },
+    { "hdr": "7E1", "type": "transmission" },
+    { "hdr": "7E3", "type": "motor" }
+  ],
+  "commands": [
 { "hdr": "720", "dbg": true, "cmd": {"22": "61CC"}, "freq": 30, "filter": { "to": 2017 },
   "signals": [
     {"id": "XC60_ODO_LAST_SERVICE_720", "path": "Trips",  "fmt": {           "len": 24, "max": 16777215,           "unit": "kilometers" }, "name": "Odometer at last service"},
