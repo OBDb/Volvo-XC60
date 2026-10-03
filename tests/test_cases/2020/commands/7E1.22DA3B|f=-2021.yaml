@@ -1,0 +1,5 @@
+command_id: 7E1.22DA3B|f=-2021
+test_cases:
+- expected_values:
+    XC60_ATF_T_VAR_2_7E1: 41
+  response: 1EC64E800562DA3B0029
