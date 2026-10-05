@@ -1,0 +1,8 @@
+command_id: 7E1.22DD01|f=-2021
+test_cases:
+- expected_values:
+    XC60_ODO_TCM: 95836
+  response: 1EC64E800662DD0101765C
+- expected_values:
+    XC60_ODO_TCM: 95863
+  response: 1EC64E800662DD01017677

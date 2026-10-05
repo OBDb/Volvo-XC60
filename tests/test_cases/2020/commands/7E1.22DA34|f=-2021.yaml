@@ -1,0 +1,8 @@
+command_id: 7E1.22DA34|f=-2021
+test_cases:
+- expected_values:
+    XC60_GEAR_RAT_ACT_7E1: 0.04761
+  response: 1EC64E800562DA3400C3
+- expected_values:
+    XC60_GEAR_RAT_ACT_7E1: 0.11646
+  response: 1EC64E800562DA3401DD
