@@ -1,0 +1,5 @@
+command_id: 7E1.22DA3C|f=-2021
+test_cases:
+- expected_values:
+    XC60_LOCK_UP_FUNCTION: 3.3333333332441484e-07
+  response: 1EC64E800462DA3C01
