@@ -1,0 +1,14 @@
+command_id: D016.1EC60E80.22DC80|ta=30,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_WASTEGATE_POS: 0
+  response: 1EC60E800462DC8000
+- expected_values:
+    XC60_WASTEGATE_POS: 6.66667
+  response: 1EC60E800462DC8011
+- expected_values:
+    XC60_WASTEGATE_POS: 13.33333
+  response: 1EC60E800462DC8022
+- expected_values:
+    XC60_WASTEGATE_POS: 20
+  response: 1EC60E800462DC8033

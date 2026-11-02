@@ -1,0 +1,26 @@
+command_id: D016.1EC6AE80.224804|ta=35,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_HVBAT_INLET_ECT: 12
+  response: 1EC6AE80046248043E
+- expected_values:
+    XC60_HVBAT_INLET_ECT: 14
+  response: 1EC6AE800462480440
+- expected_values:
+    XC60_HVBAT_INLET_ECT: 17
+  response: 1EC6AE800462480443
+- expected_values:
+    XC60_HVBAT_INLET_ECT: 18
+  response: 1EC6AE800462480444
+- expected_values:
+    XC60_HVBAT_INLET_ECT: 21
+  response: 1EC6AE800462480447
+- expected_values:
+    XC60_HVBAT_INLET_ECT: 23
+  response: 1EC6AE800462480449
+- expected_values:
+    XC60_HVBAT_INLET_ECT: 25
+  response: 1EC6AE80046248044B
+- expected_values:
+    XC60_HVBAT_INLET_ECT: 27
+  response: 1EC6AE80046248044D

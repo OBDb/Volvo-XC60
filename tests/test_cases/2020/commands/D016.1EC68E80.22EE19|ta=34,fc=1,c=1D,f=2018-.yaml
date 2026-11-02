@@ -1,0 +1,17 @@
+command_id: D016.1EC68E80.22EE19|ta=34,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_OBC_T: 15
+  response: 1EC68E800462EE190F
+- expected_values:
+    XC60_OBC_T: 19
+  response: 1EC68E800462EE1913
+- expected_values:
+    XC60_OBC_T: 25
+  response: 1EC68E800462EE1919
+- expected_values:
+    XC60_OBC_T: 30
+  response: 1EC68E800462EE191E
+- expected_values:
+    XC60_OBC_T: 31
+  response: 1EC68E800462EE191F

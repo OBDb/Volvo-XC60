@@ -1,0 +1,23 @@
+command_id: D016.1EC64E80.22DA38|ta=32,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_DRIVEN_SHFT_SPD: 0
+  response: 1EC64E800562DA380000
+- expected_values:
+    XC60_DRIVEN_SHFT_SPD: 644
+  response: 1EC64E800562DA380284
+- expected_values:
+    XC60_DRIVEN_SHFT_SPD: 680
+  response: 1EC64E800562DA3802A8
+- expected_values:
+    XC60_DRIVEN_SHFT_SPD: 896
+  response: 1EC64E800562DA380380
+- expected_values:
+    XC60_DRIVEN_SHFT_SPD: 967
+  response: 1EC64E800562DA3803C7
+- expected_values:
+    XC60_DRIVEN_SHFT_SPD: 2732
+  response: 1EC64E800562DA380AAC
+- expected_values:
+    XC60_DRIVEN_SHFT_SPD: 2843
+  response: 1EC64E800562DA380B1B

@@ -1,0 +1,29 @@
+command_id: D016.1EC6AE80.224808|ta=35,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_HVBAT_IEM_FUSE_V: 337.69
+  response: 1EC6AE800562480883E9
+- expected_values:
+    XC60_HVBAT_IEM_FUSE_V: 339.79
+  response: 1EC6AE800562480884BB
+- expected_values:
+    XC60_HVBAT_IEM_FUSE_V: 340.4
+  response: 1EC6AE800562480884F8
+- expected_values:
+    XC60_HVBAT_IEM_FUSE_V: 341.76
+  response: 1EC6AE80056248088580
+- expected_values:
+    XC60_HVBAT_IEM_FUSE_V: 343.48
+  response: 1EC6AE8005624808862C
+- expected_values:
+    XC60_HVBAT_IEM_FUSE_V: 348.66
+  response: 1EC6AE80056248088832
+- expected_values:
+    XC60_HVBAT_IEM_FUSE_V: 376.9
+  response: 1EC6AE8005624808933A
+- expected_values:
+    XC60_HVBAT_IEM_FUSE_V: 380.72
+  response: 1EC6AE800562480894B8
+- expected_values:
+    XC60_HVBAT_IEM_FUSE_V: 385.28
+  response: 1EC6AE80056248089680
