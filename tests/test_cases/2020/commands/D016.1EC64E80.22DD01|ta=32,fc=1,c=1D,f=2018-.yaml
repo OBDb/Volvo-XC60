@@ -1,0 +1,26 @@
+command_id: D016.1EC64E80.22DD01|ta=32,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_ODO: 95836
+  response: 1EC64E800662DD0101765C
+- expected_values:
+    XC60_ODO: 95863
+  response: 1EC64E800662DD01017677
+- expected_values:
+    XC60_ODO: 95901
+  response: 1EC64E800662DD0101769D
+- expected_values:
+    XC60_ODO: 95934
+  response: 1EC64E800662DD010176BE
+- expected_values:
+    XC60_ODO: 96292
+  response: 1EC64E800662DD01017824
+- expected_values:
+    XC60_ODO: 96418
+  response: 1EC64E800662DD010178A2
+- expected_values:
+    XC60_ODO: 96482
+  response: 1EC64E800662DD010178E2
+- expected_values:
+    XC60_ODO: 96751
+  response: 1EC64E800662DD010179EF

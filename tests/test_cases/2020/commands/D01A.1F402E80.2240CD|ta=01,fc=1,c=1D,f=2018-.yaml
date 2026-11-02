@@ -1,0 +1,29 @@
+command_id: D01A.1F402E80.2240CD|ta=01,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_BAT_V: 12.275
+  response: 1F402E80056240CD0123
+- expected_values:
+    XC60_BAT_V: 12.3
+  response: 1F402E80056240CD0124
+- expected_values:
+    XC60_BAT_V: 12.375
+  response: 1F402E80056240CD0127
+- expected_values:
+    XC60_BAT_V: 13.925
+  response: 1F402E80056240CD0165
+- expected_values:
+    XC60_BAT_V: 13.975
+  response: 1F402E80056240CD0167
+- expected_values:
+    XC60_BAT_V: 14
+  response: 1F402E80056240CD0168
+- expected_values:
+    XC60_BAT_V: 14.05
+  response: 1F402E80056240CD016A
+- expected_values:
+    XC60_BAT_V: 14.075
+  response: 1F402E80056240CD016B
+- expected_values:
+    XC60_BAT_V: 14.425
+  response: 1F402E80056240CD0179

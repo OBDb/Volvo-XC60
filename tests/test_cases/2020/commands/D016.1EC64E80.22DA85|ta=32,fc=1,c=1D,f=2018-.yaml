@@ -1,0 +1,14 @@
+command_id: D016.1EC64E80.22DA85|ta=32,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_GEAR: 1
+  response: 1EC64E800562DA850001
+- expected_values:
+    XC60_GEAR: 3
+  response: 1EC64E800562DA850003
+- expected_values:
+    XC60_GEAR: 4
+  response: 1EC64E800562DA850004
+- expected_values:
+    XC60_GEAR: 8
+  response: 1EC64E800562DA850008

@@ -1,0 +1,8 @@
+command_id: D016.1EC68E80.22EEB6|ta=34,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_AVG_CHG_TIME_LEFT: 0
+  response: 1EC68E800562EEB60000
+- expected_values:
+    XC60_AVG_CHG_TIME_LEFT: 2047
+  response: 1EC68E800562EEB607FF

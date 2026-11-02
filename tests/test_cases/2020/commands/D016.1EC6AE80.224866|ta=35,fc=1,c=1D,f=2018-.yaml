@@ -1,0 +1,8 @@
+command_id: D016.1EC6AE80.224866|ta=35,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_HVBAT_CLT_PMP_SPD: 0
+  response: 1EC6AE800462486600
+- expected_values:
+    XC60_HVBAT_CLT_PMP_SPD: 3240
+  response: 1EC6AE800462486687

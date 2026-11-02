@@ -1,0 +1,23 @@
+command_id: D016.1EC64E80.22DA3B|ta=32,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_ATF_T: 15
+  response: 1EC64E800562DA3B000F
+- expected_values:
+    XC60_ATF_T: 21
+  response: 1EC64E800562DA3B0015
+- expected_values:
+    XC60_ATF_T: 35
+  response: 1EC64E800562DA3B0023
+- expected_values:
+    XC60_ATF_T: 36
+  response: 1EC64E800562DA3B0024
+- expected_values:
+    XC60_ATF_T: 41
+  response: 1EC64E800562DA3B0029
+- expected_values:
+    XC60_ATF_T: 48
+  response: 1EC64E800562DA3B0030
+- expected_values:
+    XC60_ATF_T: 65
+  response: 1EC64E800562DA3B0041

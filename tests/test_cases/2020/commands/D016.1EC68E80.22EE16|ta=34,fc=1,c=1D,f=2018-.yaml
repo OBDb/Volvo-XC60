@@ -1,0 +1,8 @@
+command_id: D016.1EC68E80.22EE16|ta=34,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_DC_CHARGER_CURRENT: 0
+  response: 1EC68E800562EE160000
+- expected_values:
+    XC60_DC_CHARGER_CURRENT: 0.01
+  response: 1EC68E800562EE160001

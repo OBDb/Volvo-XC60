@@ -1,0 +1,8 @@
+command_id: D016.1EC64E80.22DA89|ta=32,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_ENG_TQ: -25
+  response: 1EC64E800562DA891306
+- expected_values:
+    XC60_ENG_TQ: 0
+  response: 1EC64E800562DA891400
