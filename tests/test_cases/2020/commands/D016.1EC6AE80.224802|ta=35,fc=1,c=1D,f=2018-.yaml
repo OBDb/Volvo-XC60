@@ -1,0 +1,29 @@
+command_id: D016.1EC6AE80.224802|ta=35,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_HVBAT_CURRENT: 1.8
+  response: 1EC6AE8005624802005A
+- expected_values:
+    XC60_HVBAT_CURRENT: 2.04
+  response: 1EC6AE80056248020066
+- expected_values:
+    XC60_HVBAT_CURRENT: 7.4
+  response: 1EC6AE80056248020172
+- expected_values:
+    XC60_HVBAT_CURRENT: 31.6
+  response: 1EC6AE8005624802062C
+- expected_values:
+    XC60_HVBAT_CURRENT: 35.46
+  response: 1EC6AE800562480206ED
+- expected_values:
+    XC60_HVBAT_CURRENT: 77.74
+  response: 1EC6AE80056248020F2F
+- expected_values:
+    XC60_HVBAT_CURRENT: 80.1
+  response: 1EC6AE80056248020FA5
+- expected_values:
+    XC60_HVBAT_CURRENT: -44.86
+  response: 1EC6AE8005624802F73D
+- expected_values:
+    XC60_HVBAT_CURRENT: -1.56
+  response: 1EC6AE8005624802FFB2

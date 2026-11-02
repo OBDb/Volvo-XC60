@@ -1,0 +1,11 @@
+command_id: D01A.1F422E80.224337|ta=11,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_HEAT_EXCHANGER_T_V_2: 28.8
+  response: 1F422E800662433709144C
+- expected_values:
+    XC60_HEAT_EXCHANGER_T_V_2: 57.6
+  response: 1F422E8006624337122420
+- expected_values:
+    XC60_HEAT_EXCHANGER_T_V_2: 76.8
+  response: 1F422E8006624337181414

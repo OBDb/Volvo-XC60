@@ -1,0 +1,23 @@
+command_id: D016.1EC60E80.220341|ta=30,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_BOOST_AIR_T: 13.75
+  response: 1EC60E800462034156
+- expected_values:
+    XC60_BOOST_AIR_T: 14.375
+  response: 1EC60E800462034157
+- expected_values:
+    XC60_BOOST_AIR_T: 18.125
+  response: 1EC60E80046203415D
+- expected_values:
+    XC60_BOOST_AIR_T: 20.625
+  response: 1EC60E800462034161
+- expected_values:
+    XC60_BOOST_AIR_T: 28.125
+  response: 1EC60E80046203416D
+- expected_values:
+    XC60_BOOST_AIR_T: 28.75
+  response: 1EC60E80046203416E
+- expected_values:
+    XC60_BOOST_AIR_T: 29.375
+  response: 1EC60E80046203416F

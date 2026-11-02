@@ -1,0 +1,20 @@
+command_id: D01A.1F402E80.224025|ta=01,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_AVG_STATIC_LOW_RANGE: -20
+  response: 1F402E800562402501EB
+- expected_values:
+    XC60_AVG_STATIC_LOW_RANGE: -19
+  response: 1F402E800562402501EC
+- expected_values:
+    XC60_AVG_STATIC_LOW_RANGE: -18
+  response: 1F402E800562402501ED
+- expected_values:
+    XC60_AVG_STATIC_LOW_RANGE: -17
+  response: 1F402E800562402501EE
+- expected_values:
+    XC60_AVG_STATIC_LOW_RANGE: -16
+  response: 1F402E800562402501EF
+- expected_values:
+    XC60_AVG_STATIC_LOW_RANGE: -14
+  response: 1F402E800562402501F1

@@ -1,0 +1,29 @@
+command_id: D016.1EC6AE80.224809|ta=35,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_HVBAT_IGM_FUSE_V: 332.39
+  response: 1EC6AE800562480981D7
+- expected_values:
+    XC60_HVBAT_IGM_FUSE_V: 339.79
+  response: 1EC6AE800562480984BB
+- expected_values:
+    XC60_HVBAT_IGM_FUSE_V: 340.52
+  response: 1EC6AE80056248098504
+- expected_values:
+    XC60_HVBAT_IGM_FUSE_V: 341.63
+  response: 1EC6AE80056248098573
+- expected_values:
+    XC60_HVBAT_IGM_FUSE_V: 343.11
+  response: 1EC6AE80056248098607
+- expected_values:
+    XC60_HVBAT_IGM_FUSE_V: 348.91
+  response: 1EC6AE8005624809884B
+- expected_values:
+    XC60_HVBAT_IGM_FUSE_V: 377.02
+  response: 1EC6AE80056248099346
+- expected_values:
+    XC60_HVBAT_IGM_FUSE_V: 383.18
+  response: 1EC6AE800562480995AE
+- expected_values:
+    XC60_HVBAT_IGM_FUSE_V: 385.03
+  response: 1EC6AE80056248099667

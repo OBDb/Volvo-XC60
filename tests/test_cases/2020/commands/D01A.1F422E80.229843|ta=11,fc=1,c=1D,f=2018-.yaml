@@ -1,0 +1,11 @@
+command_id: D01A.1F422E80.229843|ta=11,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_INTERIOR_T: 20
+  response: 1F422E8005629843645C
+- expected_values:
+    XC60_INTERIOR_T: 20.8
+  response: 1F422E8005629843655C
+- expected_values:
+    XC60_INTERIOR_T: 22.4
+  response: 1F422E800562984367FC

@@ -1,0 +1,11 @@
+command_id: D01A.1F422E80.229820|ta=11,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_EVAPORATOR_T_V_2: 3.2
+  response: 1F422E800662982001A460
+- expected_values:
+    XC60_EVAPORATOR_T_V_2: 6.4
+  response: 1F422E800662982002745C
+- expected_values:
+    XC60_EVAPORATOR_T_V_2: 6.4
+  response: 1F422E8006629820028C5C

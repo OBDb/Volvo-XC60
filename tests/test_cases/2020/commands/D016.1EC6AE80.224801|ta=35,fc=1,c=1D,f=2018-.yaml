@@ -1,0 +1,29 @@
+command_id: D016.1EC6AE80.224801|ta=35,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_HVBAT_ST_CHG: 21.006
+  response: 1EC6AE80056248012907
+- expected_values:
+    XC60_HVBAT_ST_CHG: 23.232
+  response: 1EC6AE80056248012D60
+- expected_values:
+    XC60_HVBAT_ST_CHG: 24.962
+  response: 1EC6AE800562480130C1
+- expected_values:
+    XC60_HVBAT_ST_CHG: 37.06
+  response: 1EC6AE80056248014862
+- expected_values:
+    XC60_HVBAT_ST_CHG: 58.482
+  response: 1EC6AE80056248017239
+- expected_values:
+    XC60_HVBAT_ST_CHG: 58.74
+  response: 1EC6AE800562480172BA
+- expected_values:
+    XC60_HVBAT_ST_CHG: 79.822
+  response: 1EC6AE80056248019BE7
+- expected_values:
+    XC60_HVBAT_ST_CHG: 87.13
+  response: 1EC6AE8005624801AA2D
+- expected_values:
+    XC60_HVBAT_ST_CHG: 87.282
+  response: 1EC6AE8005624801AA79

@@ -1,0 +1,29 @@
+command_id: D016.1EC68E80.22EE17|ta=34,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_DC_CHARGER_V: 339.7
+  response: 1EC68E800562EE170D45
+- expected_values:
+    XC60_DC_CHARGER_V: 340.5
+  response: 1EC68E800562EE170D4D
+- expected_values:
+    XC60_DC_CHARGER_V: 341.5
+  response: 1EC68E800562EE170D57
+- expected_values:
+    XC60_DC_CHARGER_V: 341.9
+  response: 1EC68E800562EE170D5B
+- expected_values:
+    XC60_DC_CHARGER_V: 344.7
+  response: 1EC68E800562EE170D77
+- expected_values:
+    XC60_DC_CHARGER_V: 349.1
+  response: 1EC68E800562EE170DA3
+- expected_values:
+    XC60_DC_CHARGER_V: 370.8
+  response: 1EC68E800562EE170E7C
+- expected_values:
+    XC60_DC_CHARGER_V: 385.3
+  response: 1EC68E800562EE170F0D
+- expected_values:
+    XC60_DC_CHARGER_V: 385.7
+  response: 1EC68E800562EE170F11

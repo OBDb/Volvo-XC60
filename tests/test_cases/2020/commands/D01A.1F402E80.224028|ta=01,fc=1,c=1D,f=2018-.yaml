@@ -1,0 +1,8 @@
+command_id: D01A.1F402E80.224028|ta=01,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_BAT_ST_CHG: 83.8
+  response: 1F402E80056240280346
+- expected_values:
+    XC60_BAT_ST_CHG: 96.3
+  response: 1F402E800562402803C3

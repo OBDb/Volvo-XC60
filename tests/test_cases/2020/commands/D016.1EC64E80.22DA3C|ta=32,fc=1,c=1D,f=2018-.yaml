@@ -1,0 +1,8 @@
+command_id: D016.1EC64E80.22DA3C|ta=32,fc=1,c=1D,f=2018-
+test_cases:
+- expected_values:
+    XC60_TQ_CONV_LOCK: 1
+  response: 1EC64E800462DA3C01
+- expected_values:
+    XC60_TQ_CONV_LOCK: 4
+  response: 1EC64E800462DA3C04
