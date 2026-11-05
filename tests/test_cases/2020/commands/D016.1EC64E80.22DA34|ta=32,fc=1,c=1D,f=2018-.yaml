@@ -19,6 +19,9 @@ test_cases:
     XC60_GEAR_RAT_ACT: 0.29719
   response: 1EC64E800562DA3404C2
 - expected_values:
+    XC60_GEAR_RAT_ACT: 0.67271
+  response: 1EC64E800562DA340AC5
+- expected_values:
     XC60_GEAR_RAT_ACT: 1.2832
   response: 1EC64E800562DA34148B
 - expected_values:

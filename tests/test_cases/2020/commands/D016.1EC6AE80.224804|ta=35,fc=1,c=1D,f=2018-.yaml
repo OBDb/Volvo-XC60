@@ -24,3 +24,6 @@ test_cases:
 - expected_values:
     XC60_HVBAT_INLET_ECT: 27
   response: 1EC6AE80046248044D
+- expected_values:
+    XC60_HVBAT_INLET_ECT: 39
+  response: 1EC6AE800462480459

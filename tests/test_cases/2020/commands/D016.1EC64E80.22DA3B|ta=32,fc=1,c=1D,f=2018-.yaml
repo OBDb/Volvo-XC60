@@ -21,3 +21,6 @@ test_cases:
 - expected_values:
     XC60_ATF_T: 65
   response: 1EC64E800562DA3B0041
+- expected_values:
+    XC60_ATF_T: 85
+  response: 1EC64E800562DA3B0055

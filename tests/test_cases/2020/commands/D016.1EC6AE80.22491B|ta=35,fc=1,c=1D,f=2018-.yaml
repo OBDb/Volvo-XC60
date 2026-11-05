@@ -25,5 +25,8 @@ test_cases:
     XC60_HVBAT_AVG_T: 25.33
   response: 1EC6AE800562491B1D6D
 - expected_values:
+    XC60_HVBAT_AVG_T: 25.49
+  response: 1EC6AE800562491B1D7D
+- expected_values:
     XC60_HVBAT_AVG_T: 29.11
   response: 1EC6AE800562491B1EE7

@@ -18,3 +18,6 @@ test_cases:
 - expected_values:
     XC60_AVG_STATIC_LOW_RANGE: -14
   response: 1F402E800562402501F1
+- expected_values:
+    XC60_AVG_STATIC_LOW_RANGE: -13
+  response: 1F402E800562402501F2

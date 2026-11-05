@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     XC60_ENG_TQ: 0
   response: 1EC64E800562DA891400
+- expected_values:
+    XC60_ENG_TQ: 14
+  response: 1EC64E800562DA89148C

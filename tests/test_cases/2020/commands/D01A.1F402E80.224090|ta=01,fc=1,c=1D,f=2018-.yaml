@@ -7,8 +7,8 @@ test_cases:
     XC60_BAT_CURRENT: -17.4375
   response: 1F402E80056240901EE9
 - expected_values:
-    XC60_BAT_CURRENT: -14.9375
-  response: 1F402E80056240901F11
+    XC60_BAT_CURRENT: 0.0625
+  response: 1F402E80056240902001
 - expected_values:
     XC60_BAT_CURRENT: 19.875
   response: 1F402E8005624090213E
