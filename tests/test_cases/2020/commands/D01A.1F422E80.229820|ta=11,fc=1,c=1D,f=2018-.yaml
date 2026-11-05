@@ -4,6 +4,9 @@ test_cases:
     XC60_EVAPORATOR_T_V_2: 3.2
   response: 1F422E800662982001A460
 - expected_values:
+    XC60_EVAPORATOR_T_V_2: 3.2
+  response: 1F422E800662982001EC60
+- expected_values:
     XC60_EVAPORATOR_T_V_2: 6.4
   response: 1F422E800662982002745C
 - expected_values:

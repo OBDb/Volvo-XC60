@@ -1,6 +1,9 @@
 command_id: D016.1EC6AE80.22480A|ta=35,fc=1,c=1D,f=2018-
 test_cases:
 - expected_values:
+    XC60_HVBAT_HVCH_FUSE_V: 319.07
+  response: 1EC6AE800562480A7CA3
+- expected_values:
     XC60_HVBAT_HVCH_FUSE_V: 333.87
   response: 1EC6AE800562480A826B
 - expected_values:

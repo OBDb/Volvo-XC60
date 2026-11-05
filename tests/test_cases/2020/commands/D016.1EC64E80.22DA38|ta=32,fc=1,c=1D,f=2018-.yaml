@@ -16,6 +16,9 @@ test_cases:
     XC60_DRIVEN_SHFT_SPD: 967
   response: 1EC64E800562DA3803C7
 - expected_values:
+    XC60_DRIVEN_SHFT_SPD: 2565
+  response: 1EC64E800562DA380A05
+- expected_values:
     XC60_DRIVEN_SHFT_SPD: 2732
   response: 1EC64E800562DA380AAC
 - expected_values:

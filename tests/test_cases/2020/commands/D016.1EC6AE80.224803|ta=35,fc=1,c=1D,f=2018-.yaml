@@ -1,6 +1,9 @@
 command_id: D016.1EC6AE80.224803|ta=35,fc=1,c=1D,f=2018-
 test_cases:
 - expected_values:
+    XC60_HVBAT_V: 331.03
+  response: 1EC6AE8005624803814F
+- expected_values:
     XC60_HVBAT_V: 332.39
   response: 1EC6AE800562480381D7
 - expected_values:

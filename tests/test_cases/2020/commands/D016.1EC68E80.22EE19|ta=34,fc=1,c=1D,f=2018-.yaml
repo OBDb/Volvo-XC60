@@ -15,3 +15,6 @@ test_cases:
 - expected_values:
     XC60_OBC_T: 31
   response: 1EC68E800462EE191F
+- expected_values:
+    XC60_OBC_T: 42
+  response: 1EC68E800462EE192A

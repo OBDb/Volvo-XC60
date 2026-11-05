@@ -24,3 +24,6 @@ test_cases:
 - expected_values:
     XC60_ODO: 96751
   response: 1EC64E800662DD010179EF
+- expected_values:
+    XC60_ODO: 97413
+  response: 1EC64E800662DD01017C85

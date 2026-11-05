@@ -27,3 +27,6 @@ test_cases:
 - expected_values:
     XC60_BOOST_AIR_P_AFTER: 134.94
   response: 1EC60E800562033E34B6
+- expected_values:
+    XC60_BOOST_AIR_P_AFTER: 160.67
+  response: 1EC60E800562033E3EC3

@@ -9,3 +9,6 @@ test_cases:
 - expected_values:
     XC60_INTERIOR_T: 22.4
   response: 1F422E800562984367FC
+- expected_values:
+    XC60_INTERIOR_T: 24
+  response: 1F422E8005629843695C
