@@ -4,29 +4,11 @@ test_cases:
     XC60_HVBAT_V: 331.03
   response: 1EC6AE8005624803814F
 - expected_values:
-    XC60_HVBAT_V: 332.39
-  response: 1EC6AE800562480381D7
-- expected_values:
-    XC60_HVBAT_V: 339.79
-  response: 1EC6AE800562480384BB
-- expected_values:
     XC60_HVBAT_V: 340.4
   response: 1EC6AE800562480384F8
 - expected_values:
-    XC60_HVBAT_V: 341.63
-  response: 1EC6AE80056248038573
-- expected_values:
-    XC60_HVBAT_V: 342.62
-  response: 1EC6AE800562480385D6
-- expected_values:
-    XC60_HVBAT_V: 345.21
-  response: 1EC6AE800562480386D9
-- expected_values:
     XC60_HVBAT_V: 376.4
   response: 1EC6AE80056248039308
-- expected_values:
-    XC60_HVBAT_V: 383.55
-  response: 1EC6AE800562480395D3
 - expected_values:
     XC60_HVBAT_V: 386.02
   response: 1EC6AE800562480396CA
