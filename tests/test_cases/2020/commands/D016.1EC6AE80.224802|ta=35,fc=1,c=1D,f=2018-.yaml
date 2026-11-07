@@ -7,8 +7,8 @@ test_cases:
     XC60_HVBAT_CURRENT: 5.9
   response: 1EC6AE80056248020127
 - expected_values:
-    XC60_HVBAT_CURRENT: 35.46
-  response: 1EC6AE800562480206ED
+    XC60_HVBAT_CURRENT: -10.4
+  response: 1EC6AE8005624802FDF8
 - expected_values:
     XC60_HVBAT_CURRENT: -1.56
   response: 1EC6AE8005624802FFB2
