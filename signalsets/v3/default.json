@@ -739,7 +739,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D941"}, "freq": 1, "filter": { "to": 2021 },
   "signals": [
-    {"id": "XC60_BOOST_P", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "kilopascal" }, "name": "Boost pressure"}
+    {"id": "XC60_BOOST_P", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "kilopascal" }, "name": "Boost pressure", "suggestedMetric": "absoluteBoostPressure"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "D943"}, "freq": 0.25, "filter": { "to": 2021 },
   "signals": [
