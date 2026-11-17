@@ -10,5 +10,5 @@ test_cases:
     XC60_HVBAT_V: 376.4
   response: 1EC6AE80056248039308
 - expected_values:
-    XC60_HVBAT_V: 386.02
-  response: 1EC6AE800562480396CA
+    XC60_HVBAT_V: 388.12
+  response: 1EC6AE8005624803979C
